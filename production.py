@@ -25,13 +25,11 @@ class Production:
         cls.bom.on_change.add('drawing_lines')
 
     def on_change_bom(self):
-        res = super(Production, self).on_change_bom()
-        res['drawing'] = self.on_change_with_drawing()
+        super(Production, self).on_change_bom()
         self.drawing = (self.bom.drawing.id if self.bom and self.bom.drawing
             else None)
-        res['drawing_image'] = self.on_change_with_drawing_image()
-        res['drawing_lines'] = self.on_change_with_drawing_lines()
-        return res
+        self.on_change_with_drawing_image()
+        self.on_change_with_drawing_lines()
 
     @fields.depends('drawing')
     def on_change_with_drawing_lines(self):
@@ -66,8 +64,8 @@ class Production:
             production.drawing_lines = []
             for line in production.bom.drawing_lines:
                 production.drawing_lines.append(Line(
-                        position = line.position,
-                        product = line.product,
+                        position=line.position,
+                        product=line.product,
                         ))
         return production
 
