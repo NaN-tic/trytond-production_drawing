@@ -59,14 +59,15 @@ class Production:
         Line = Pool().get('production.drawing.line')
         production = super(Production, cls).compute_request(product, warehouse,
             quantity, date, company)
+        drawing_lines = []
         if production.bom and production.bom.drawing:
             production.drawing = production.bom.drawing
-            production.drawing_lines = []
             for line in production.bom.drawing_lines:
-                production.drawing_lines.append(Line(
+                drawing_lines.append(Line(
                         position=line.position,
                         product=line.product,
                         ))
+        production.drawing_lines = drawing_lines
         return production
 
 
