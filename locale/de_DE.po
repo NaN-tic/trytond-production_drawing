@@ -1,0 +1,253 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:production.bom.drawing.line:"
+msgid "Drawing Position must be unique per BOM."
+msgstr ""
+"Eine Zeichnungsposition kann nur einmal pro Stückliste eingegeben werden."
+
+msgctxt "error:production.drawing.line:"
+msgid "Drawing Position must be unique per BOM."
+msgstr ""
+"Eine Zeichnungsposition kann nur einmal pro Stückliste eingegeben werden."
+
+msgctxt "field:production,drawing:"
+msgid "Drawing"
+msgstr "Zeichnung"
+
+msgctxt "field:production,drawing_image:"
+msgid "Drawing Image"
+msgstr "Bild"
+
+msgctxt "field:production,drawing_lines:"
+msgid "Drawing Positions"
+msgstr "Zeichnungspositionen"
+
+msgctxt "field:production.bom,drawing:"
+msgid "Drawing"
+msgstr "Zeichnung"
+
+msgctxt "field:production.bom,drawing_image:"
+msgid "Drawing Image"
+msgstr "Bild"
+
+msgctxt "field:production.bom,drawing_lines:"
+msgid "Drawing Positions"
+msgstr "Zeichnungspositionen"
+
+msgctxt "field:production.bom.drawing.line,bom:"
+msgid "BOM"
+msgstr "Stückliste"
+
+msgctxt "field:production.bom.drawing.line,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:production.bom.drawing.line,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:production.bom.drawing.line,drawing:"
+msgid "Drawing"
+msgstr "Zeichnung"
+
+msgctxt "field:production.bom.drawing.line,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:production.bom.drawing.line,position:"
+msgid "Drawing Position"
+msgstr "Zeichnungsposition"
+
+msgctxt "field:production.bom.drawing.line,product:"
+msgid "Product"
+msgstr "Variante"
+
+msgctxt "field:production.bom.drawing.line,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:production.bom.drawing.line,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:production.bom.drawing.line,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:production.drawing,active:"
+msgid "Active"
+msgstr "Aktiv"
+
+msgctxt "field:production.drawing,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:production.drawing,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:production.drawing,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:production.drawing,image:"
+msgid "Image"
+msgstr "Bild"
+
+msgctxt "field:production.drawing,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:production.drawing,positions:"
+msgid "Positions"
+msgstr "Positionen"
+
+msgctxt "field:production.drawing,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:production.drawing,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:production.drawing,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:production.drawing.line,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:production.drawing.line,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:production.drawing.line,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:production.drawing.line,lot:"
+msgid "Lot"
+msgstr "Lot"
+
+msgctxt "field:production.drawing.line,position:"
+msgid "Drawing Position"
+msgstr "Zeichnungsposition"
+
+msgctxt "field:production.drawing.line,product:"
+msgid "Product"
+msgstr "Variante"
+
+msgctxt "field:production.drawing.line,production:"
+msgid "Production"
+msgstr "Produktion"
+
+msgctxt "field:production.drawing.line,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:production.drawing.line,valid_lots:"
+msgid "Product"
+msgstr "Variante"
+
+msgctxt "field:production.drawing.line,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:production.drawing.line,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:production.drawing.position,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:production.drawing.position,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:production.drawing.position,drawing:"
+msgid "Drawing"
+msgstr "Zeichnung"
+
+msgctxt "field:production.drawing.position,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:production.drawing.position,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:production.drawing.position,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:production.drawing.position,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:production.drawing.position,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "model:ir.action,name:act_production_bom_drawing_line"
+msgid "Production BOM Drawing Line"
+msgstr "Stückliste Zeichnungsposition"
+
+msgctxt "model:ir.action,name:act_production_drawing"
+msgid "Production Drawing"
+msgstr "Produktionszeichnung"
+
+msgctxt "model:ir.action,name:act_production_drawing_line"
+msgid "Production Drawing Line"
+msgstr "Zeichnungszeile"
+
+msgctxt "model:ir.action,name:act_production_drawing_position"
+msgid "Production Drawing Position"
+msgstr "Zeichnungsposition"
+
+msgctxt "model:ir.ui.menu,name:menu_production_drawing"
+msgid "Drawings"
+msgstr "Zeichnungen"
+
+msgctxt "model:production.bom.drawing.line,name:"
+msgid "Production BOM Drawing Line"
+msgstr "Stückliste Zeichnungsposition"
+
+msgctxt "model:production.drawing,name:"
+msgid "Production Drawing"
+msgstr "Produktionszeichnung"
+
+msgctxt "model:production.drawing.line,name:"
+msgid "Production Drawing Line"
+msgstr "Zeichnungszeile"
+
+msgctxt "model:production.drawing.position,name:"
+msgid "Production Drawing Position"
+msgstr "Zeichnungsposition"
+
+msgctxt "view:production.bom.drawing.line:"
+msgid "Production BOM Drawing Line"
+msgstr "Stückliste Zeichnungsposition"
+
+msgctxt "view:production.bom:"
+msgid "Drawing"
+msgstr "Zeichnung"
+
+msgctxt "view:production.drawing.line:"
+msgid "Production Drawing Line"
+msgstr "Zeichnungszeile"
+
+msgctxt "view:production.drawing.position:"
+msgid "Production Drawing Position"
+msgstr "Zeichnungsposition"
+
+msgctxt "view:production.drawing:"
+msgid "Production Drawing"
+msgstr "Produktionszeichnung"
+
+msgctxt "view:production:"
+msgid "Drawing"
+msgstr "Zeichnung"
