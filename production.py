@@ -34,7 +34,7 @@ class Production:
     @fields.depends('drawing')
     def on_change_with_drawing_lines(self):
         if not self.bom or not self.bom.drawing:
-            to_remove = [x.id for x in self.drawing_lines]
+            to_remove = [x.id for x in getattr(self, 'drawing_lines')]
             return {
                 'remove': to_remove,
                 }

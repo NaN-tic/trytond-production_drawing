@@ -35,6 +35,14 @@
             <field name="perm_create" eval="False"/>
             <field name="perm_delete" eval="False"/>
         </record>
+        <record model="ir.model.access" id="access_production_drawing_base">
+            <field name="model" search="[('model', '=', 'production.drawing')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+          </record>
+
         <record model="ir.model.access" id="access_production_drawing_admin">
             <field name="model" search="[('model', '=', 'production.drawing')]"/>
             <field name="group" ref="production.group_production_admin"/>
@@ -67,6 +75,13 @@
             <field name="view" ref="drawing_position_view_form"/>
             <field name="act_window" ref="act_production_drawing_position"/>
         </record>
+        <record model="ir.model.access" id="access_production_drawing_position_base">
+            <field name="model" search="[('model', '=', 'production.drawing.position')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
         <record model="ir.model.access" id="access_production_drawing_position">
             <field name="model" search="[('model', '=', 'production.drawing.position')]"/>
             <field name="group" ref="production.group_production"/>
@@ -83,6 +98,8 @@
             <field name="perm_create" eval="True"/>
             <field name="perm_delete" eval="True"/>
         </record>
+
+
         <!-- Menus -->
         <menuitem action="act_production_drawing" id="menu_production_drawing"
             parent="production.menu_configuration" sequence="1"
