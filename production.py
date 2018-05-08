@@ -1,4 +1,4 @@
-from trytond.model import ModelSQL, ModelView, fields
+from trytond.model import ModelSQL, ModelView, fields, Unique
 from trytond.pyson import Eval, Bool
 from trytond.pool import PoolMeta, Pool
 
@@ -91,8 +91,10 @@ class ProductionDrawingLine(ModelSQL, ModelView):
     @classmethod
     def __setup__(cls):
         super(ProductionDrawingLine, cls).__setup__()
+        t = cls.__table__()
         cls._sql_constraints += [
-            ('check_bom_drawing_position_uniq', 'UNIQUE(production, position)',
+            ('check_bom_drawing_position_uniq', Unique(t, t.production,
+                t.position),
                 'Drawing Position must be unique per BOM.'),
             ]
 
