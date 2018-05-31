@@ -2,8 +2,8 @@
 <!-- The COPYRIGHT file at the top level of this repository contains the full
      copyright notices and license terms. -->
 <form string="Production Drawing Line">
-    <label name="bom"/>
-    <field name="bom"/>
+    <label name="production"/>
+    <field name="production"/>
     <newline/>
     <label name="position"/>
     <field name="position"/>
