@@ -17,7 +17,7 @@ class BOM:
     drawing_image = fields.Function(fields.Binary('Drawing Image'),
         'on_change_with_drawing_image')
 
-    @fields.depends('drawing')
+    @fields.depends('drawing', 'drawing_lines')
     def on_change_with_drawing_lines(self):
         if not self.drawing:
             to_remove = [x.id for x in self.drawing_lines]
