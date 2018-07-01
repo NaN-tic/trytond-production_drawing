@@ -24,6 +24,7 @@ class Production:
         super(Production, cls).__setup__()
         cls.bom.on_change.add('drawing_lines')
 
+    @fields.depends('bom')
     def on_change_bom(self):
         super(Production, self).on_change_bom()
         self.drawing = (self.bom.drawing.id if self.bom and self.bom.drawing
@@ -31,10 +32,10 @@ class Production:
         self.on_change_with_drawing_image()
         self.on_change_with_drawing_lines()
 
-    @fields.depends('drawing')
+    @fields.depends('bom', 'drawing', 'drawing_lines')
     def on_change_with_drawing_lines(self):
-        if not self.bom or not self.bom.drawing:
-            to_remove = [x.id for x in getattr(self, 'drawing_lines')]
+        if not self.bom or not self.bom.drawing and hasattr(self, 'drawing_lines'):
+            to_remove = [x.id for x in getattr(self, 'drawing_lines', [])]
             return {
                 'remove': to_remove,
                 }
