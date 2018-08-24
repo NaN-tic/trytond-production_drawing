@@ -5,9 +5,8 @@ from trytond.pool import PoolMeta
 __all__ = ['BOM', 'BOMDrawingLine']
 
 
-class BOM:
+class BOM(metaclass=PoolMeta):
     __name__ = 'production.bom'
-    __metaclass__ = PoolMeta
     drawing = fields.Many2One('production.drawing', 'Drawing',
         ondelete='RESTRICT')
     drawing_lines = fields.One2Many('production.bom.drawing.line',
