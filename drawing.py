@@ -1,20 +1,15 @@
-from trytond.model import ModelSQL, ModelView, fields
+from trytond.model import ModelSQL, ModelView, DeactivableMixin, fields
 
 __all__ = ['Drawing', 'DrawingPosition']
 
 
-class Drawing(ModelSQL, ModelView):
+class Drawing(DeactivableMixin, ModelSQL, ModelView):
     'Production Drawing'
     __name__ = 'production.drawing'
     name = fields.Char('Name', required=True)
-    active = fields.Boolean('Active')
     image = fields.Binary('Image')
     positions = fields.One2Many('production.drawing.position', 'drawing',
         'Positions')
-
-    @staticmethod
-    def default_active():
-        return True
 
 
 class DrawingPosition(ModelSQL, ModelView):
