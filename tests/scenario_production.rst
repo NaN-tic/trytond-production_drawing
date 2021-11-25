@@ -68,8 +68,8 @@ Create Components::
     >>> component1.template = template1
     >>> component1.save()
 
-    >>> meter, = ProductUom.find([('name', '=', 'Meter')])
-    >>> centimeter, = ProductUom.find([('name', '=', 'centimeter')])
+    >>> meter, = ProductUom.find([('symbol', '=', 'm')])
+    >>> centimeter, = ProductUom.find([('symbol', '=', 'cm')])
     >>> component2 = Product()
     >>> template2 = ProductTemplate()
     >>> template2.name = 'component 2'
@@ -115,4 +115,3 @@ Create Bill of Material::
     >>> names = [str(x.position.name) for x in bom.drawing_lines]
     >>> sorted(names)
     ['R1', 'R2']
-    
