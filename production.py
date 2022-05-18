@@ -55,10 +55,11 @@ class Production(metaclass=PoolMeta):
         return self.drawing.image if self.drawing else None
 
     @classmethod
-    def compute_request(cls, product, warehouse, quantity, date, company):
+    def compute_request(cls, product, warehouse, quantity, date, company,
+            order_point=None):
         Line = Pool().get('production.drawing.line')
         production = super(Production, cls).compute_request(product, warehouse,
-            quantity, date, company)
+            quantity, date, company, order_point)
         drawing_lines = []
         if production.bom and production.bom.drawing:
             production.drawing = production.bom.drawing
