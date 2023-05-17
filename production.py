@@ -18,12 +18,7 @@ class Production(metaclass=PoolMeta):
     drawing_image = fields.Function(fields.Binary('Drawing Image'),
         'on_change_with_drawing_image')
 
-    @classmethod
-    def __setup__(cls):
-        super(Production, cls).__setup__()
-        cls.bom.on_change.add('drawing_lines')
-
-    @fields.depends('bom')
+    @fields.depends('bom', 'drawing_lines')
     def on_change_bom(self):
         super(Production, self).on_change_bom()
         self.drawing = (self.bom.drawing.id if self.bom and self.bom.drawing
