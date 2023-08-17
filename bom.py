@@ -1,8 +1,6 @@
 from trytond.model import ModelSQL, ModelView, fields, Unique
 from trytond.pyson import Eval, Bool
-from trytond.pool import PoolMeta
-
-__all__ = ['BOM', 'BOMDrawingLine']
+from trytond.pool import PoolMeta, Pool
 
 
 class BOM(metaclass=PoolMeta):
@@ -18,17 +16,13 @@ class BOM(metaclass=PoolMeta):
 
     @fields.depends('drawing', 'drawing_lines')
     def on_change_with_drawing_lines(self):
+        DrawingLine = Pool().get('production.bom.drawing.line')
         if not self.drawing:
-            to_remove = [x.id for x in self.drawing_lines]
-            return {
-                'remove': to_remove,
-                }
-        to_add = []
+            return []
+        res = []
         for position in self.drawing.positions:
-            to_add.append((-1, {
-                    'position': position.id,
-                    }))
-        return {'add': to_add}
+            res.append(DrawingLine(position=position))
+        return res
 
     @fields.depends('drawing')
     def on_change_with_drawing_image(self, name=None):

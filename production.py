@@ -28,18 +28,17 @@ class Production(metaclass=PoolMeta):
 
     @fields.depends('bom', 'drawing', 'drawing_lines')
     def on_change_with_drawing_lines(self):
+        Line = Pool().get('production.drawing.line')
+
         if not self.bom or not self.bom.drawing and hasattr(self, 'drawing_lines'):
-            to_remove = [x.id for x in getattr(self, 'drawing_lines', [])]
-            return {
-                'remove': to_remove,
-                }
-        to_add = []
+            return []
+        res = []
         for line in self.bom.drawing_lines:
-            to_add.append((-1, {
-                    'position': line.position.id,
-                    'product': line.product.id if line.product else None,
-                    }))
-        return {'add': to_add}
+            res.append(Line(
+                    position=line.position,
+                    product=line.product,
+                    ))
+        return res
 
     @fields.depends('bom')
     def on_change_with_drawing(self):
