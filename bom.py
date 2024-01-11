@@ -39,7 +39,7 @@ class BOMDrawingLine(ModelSQL, ModelView):
             ('drawing', '=', Eval('drawing', -1)),
             ], states={
             'readonly': True,
-            }, depends=['drawing'])
+            })
     drawing = fields.Function(fields.Many2One('production.drawing', 'Drawing'),
         'get_drawing')
     product = fields.Many2One('product.product', 'Product',
