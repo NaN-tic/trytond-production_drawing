@@ -28,7 +28,7 @@
             <field name="act_window" ref="act_production_drawing"/>
         </record>
         <record model="ir.model.access" id="access_production_drawing">
-            <field name="model" search="[('model', '=', 'production.drawing')]"/>
+            <field name="model">production.drawing</field>
             <field name="group" ref="production.group_production"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="False"/>
@@ -36,7 +36,7 @@
             <field name="perm_delete" eval="False"/>
         </record>
         <record model="ir.model.access" id="access_production_drawing_base">
-            <field name="model" search="[('model', '=', 'production.drawing')]"/>
+            <field name="model">production.drawing</field>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
@@ -44,7 +44,7 @@
           </record>
 
         <record model="ir.model.access" id="access_production_drawing_admin">
-            <field name="model" search="[('model', '=', 'production.drawing')]"/>
+            <field name="model">production.drawing</field>
             <field name="group" ref="production.group_production_admin"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
@@ -76,14 +76,14 @@
             <field name="act_window" ref="act_production_drawing_position"/>
         </record>
         <record model="ir.model.access" id="access_production_drawing_position_base">
-            <field name="model" search="[('model', '=', 'production.drawing.position')]"/>
+            <field name="model">production.drawing.position</field>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="False"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_delete" eval="False"/>
         </record>
         <record model="ir.model.access" id="access_production_drawing_position">
-            <field name="model" search="[('model', '=', 'production.drawing.position')]"/>
+            <field name="model">production.drawing.position</field>
             <field name="group" ref="production.group_production"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="False"/>
@@ -91,7 +91,7 @@
             <field name="perm_delete" eval="False"/>
         </record>
         <record model="ir.model.access" id="access_production_drawing_position_admin">
-            <field name="model" search="[('model', '=', 'production.drawing.position')]"/>
+            <field name="model">production.drawing.position</field>
             <field name="group" ref="production.group_production_admin"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
