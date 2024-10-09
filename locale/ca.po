@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
@@ -215,10 +215,6 @@ msgstr "Data modificación"
 msgctxt "field:production.drawing.position,write_uid:"
 msgid "Write User"
 msgstr "Usuari modificació"
-
-msgctxt "model:ir.action,name:"
-msgid "Production BOM Drawing Position"
-msgstr "Posició d'esquema de LdM"
 
 msgctxt "model:ir.action,name:act_production_bom_drawing_line"
 msgid "Production BOM Drawing Line"
