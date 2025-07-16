@@ -2,14 +2,6 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "error:production.bom.drawing.line:"
-msgid "Drawing Position must be unique per BOM."
-msgstr "La posició d'esquema ha de ser única per LdM."
-
-msgctxt "error:production.drawing.line:"
-msgid "Drawing Position must be unique per BOM."
-msgstr "La posició d'esquema ha de ser única per LdM."
-
 #, fuzzy
 msgctxt "field:production,drawing:"
 msgid "Drawing"
