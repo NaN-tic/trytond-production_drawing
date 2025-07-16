@@ -2,16 +2,6 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "error:production.bom.drawing.line:"
-msgid "Drawing Position must be unique per BOM."
-msgstr ""
-"Eine Zeichnungsposition kann nur einmal pro Stückliste eingegeben werden."
-
-msgctxt "error:production.drawing.line:"
-msgid "Drawing Position must be unique per BOM."
-msgstr ""
-"Eine Zeichnungsposition kann nur einmal pro Stückliste eingegeben werden."
-
 msgctxt "field:production,drawing:"
 msgid "Drawing"
 msgstr "Zeichnung"
