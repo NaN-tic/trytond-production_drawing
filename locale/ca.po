@@ -10,7 +10,6 @@ msgctxt "error:production.drawing.line:"
 msgid "Drawing Position must be unique per BOM."
 msgstr "La posició d'esquema ha de ser única per LdM."
 
-#, fuzzy
 msgctxt "field:production,drawing:"
 msgid "Drawing"
 msgstr "Esquema"
@@ -35,27 +34,22 @@ msgctxt "field:production.bom,drawing_lines:"
 msgid "Drawing Positions"
 msgstr "Posicions de l'esquema"
 
-#, fuzzy
 msgctxt "field:production.bom.drawing.line,bom:"
 msgid "BOM"
-msgstr "Llistes de materials"
+msgstr "Llista de materials"
 
-#, fuzzy
 msgctxt "field:production.bom.drawing.line,create_date:"
 msgid "Create Date"
 msgstr "Data de creació"
 
-#, fuzzy
 msgctxt "field:production.bom.drawing.line,create_uid:"
 msgid "Create User"
 msgstr "Usuari de creació"
 
-#, fuzzy
 msgctxt "field:production.bom.drawing.line,drawing:"
 msgid "Drawing"
 msgstr "Esquema"
 
-#, fuzzy
 msgctxt "field:production.bom.drawing.line,id:"
 msgid "ID"
 msgstr "Identificador"
@@ -64,32 +58,26 @@ msgctxt "field:production.bom.drawing.line,position:"
 msgid "Drawing Position"
 msgstr "Posició d'esquema"
 
-#, fuzzy
 msgctxt "field:production.bom.drawing.line,product:"
 msgid "Product"
 msgstr "Producte"
 
-#, fuzzy
 msgctxt "field:production.bom.drawing.line,rec_name:"
 msgid "Name"
 msgstr "Nom"
 
-#, fuzzy
 msgctxt "field:production.bom.drawing.line,valid_products:"
 msgid "Product"
 msgstr "Producte"
 
-#, fuzzy
 msgctxt "field:production.bom.drawing.line,write_date:"
 msgid "Write Date"
 msgstr "Data modificación"
 
-#, fuzzy
 msgctxt "field:production.bom.drawing.line,write_uid:"
 msgid "Write User"
 msgstr "Usuari modificació"
 
-#, fuzzy
 msgctxt "field:production.drawing,active:"
 msgid "Active"
 msgstr "Actiu"
@@ -130,22 +118,18 @@ msgctxt "field:production.drawing,write_uid:"
 msgid "Write User"
 msgstr "Usuari modificació"
 
-#, fuzzy
 msgctxt "field:production.drawing.line,create_date:"
 msgid "Create Date"
 msgstr "Data de creació"
 
-#, fuzzy
 msgctxt "field:production.drawing.line,create_uid:"
 msgid "Create User"
 msgstr "Usuari de creació"
 
-#, fuzzy
 msgctxt "field:production.drawing.line,id:"
 msgid "ID"
 msgstr "Identificador"
 
-#, fuzzy
 msgctxt "field:production.drawing.line,lot:"
 msgid "Lot"
 msgstr "Lot"
@@ -154,32 +138,26 @@ msgctxt "field:production.drawing.line,position:"
 msgid "Drawing Position"
 msgstr "Posició de l'esquema"
 
-#, fuzzy
 msgctxt "field:production.drawing.line,product:"
 msgid "Product"
 msgstr "Productes"
 
-#, fuzzy
 msgctxt "field:production.drawing.line,production:"
 msgid "Production"
 msgstr "Producció"
 
-#, fuzzy
 msgctxt "field:production.drawing.line,rec_name:"
 msgid "Name"
 msgstr "Nom"
 
-#, fuzzy
 msgctxt "field:production.drawing.line,valid_lots:"
 msgid "Product"
 msgstr "Producte"
 
-#, fuzzy
 msgctxt "field:production.drawing.line,write_date:"
 msgid "Write Date"
 msgstr "Data modificación"
 
-#, fuzzy
 msgctxt "field:production.drawing.line,write_uid:"
 msgid "Write User"
 msgstr "Usuari modificació"
@@ -272,7 +250,6 @@ msgctxt "view:production.drawing:"
 msgid "Production Drawing"
 msgstr "Esquema de producció"
 
-#, fuzzy
 msgctxt "view:production:"
 msgid "Drawing"
 msgstr "Esquema"
