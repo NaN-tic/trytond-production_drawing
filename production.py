@@ -80,7 +80,7 @@ class ProductionDrawingLine(ModelSQL, ModelView):
             ('product', '=', Eval('product', -1)),
             ('id', 'in', Eval('valid_lots', [])),
             ])
-    valid_lots = fields.Function(fields.Many2Many('stock.lot', None,
+    valid_lots = fields.Function(fields.One2Many('stock.lot', None,
                 'Product'), 'get_valid_lots')
 
     @classmethod
