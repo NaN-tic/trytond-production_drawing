@@ -9,7 +9,7 @@ class Production(metaclass=PoolMeta):
     __name__ = 'production'
     drawing = fields.Many2One('production.drawing', 'Drawing',
         ondelete='RESTRICT', states={
-            'readonly': True,
+            'editable': False,
             })
     drawing_lines = fields.One2Many('production.drawing.line',
         'production', 'Drawing Positions', states={
